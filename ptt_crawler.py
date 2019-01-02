@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 
 def ptt_crawler(name):
     url = 'https://www.ptt.cc/bbs/' + name + '/index.html'
-    url = 'https://www.ptt.cc/bbs/Python/index346.html'
 
     response = requests.get(url, cookies={'over18': '1'})
     soup = BeautifulSoup(response.text, 'html.parser')
